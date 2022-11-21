@@ -8,7 +8,8 @@
   "license": "s",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "node dist"
   },
   "private": null,
   "devDependencies": {

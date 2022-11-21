@@ -9,7 +9,6 @@ export const Product = model(
     },
     icon: {
       type: String,
-      required: true
     },
     imagePath: {
       type: String,
