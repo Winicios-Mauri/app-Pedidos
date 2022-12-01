@@ -7,7 +7,7 @@ import { createCategory } from './app/useCases/categories/createCategory';
 import { listCategories } from './app/useCases/categories/listCategory';
 import { createProduct } from './app/useCases/products/createProduct';
 import { listProducts } from './app/useCases/products/listProducts';
-import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory';
+import { listProductByCategory } from './app/useCases/categories/listProductsByCategory';
 import { listOrders } from './app/useCases/orders/listOrders';
 import { createOrder } from './app/useCases/orders/createOrder';
 import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus';
@@ -41,7 +41,7 @@ router.get('/products', listProducts);
 router.post('/products', upload.single('image'), createProduct);
 
 //  Get Products by Category
-router.get('/categories/:categoriesId/products', listProductsByCategory);
+router.get('/categories/:categoryId/products', listProductByCategory);
 
 // List Orders
 router.get('/orders', listOrders);
